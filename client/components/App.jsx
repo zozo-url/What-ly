@@ -1,20 +1,20 @@
 import React from "react";
 
 import ErrorMessage from "./ErrorMessage";
-import LoadSubreddit from "./LoadSubreddit";
-import SubredditList from "./SubredditList";
+import UploadImage from "./UploadImage";
 import WaitIndicator from "./WaitIndicator";
 import { connect } from "react-redux";
 import Image from "./Image";
+import Header from "./Header"
 
 const App = (props) => (
   <div className="app">
+    <Header />
     <ErrorMessage />
     
-    {props.uploadPage && <LoadSubreddit />}
+    {props.uploadPage && <UploadImage />}
     {props.imagePage && <Image />}
     <WaitIndicator />
-
   </div>
 );
 

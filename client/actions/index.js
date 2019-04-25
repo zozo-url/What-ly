@@ -11,14 +11,11 @@ export const STORE_SUGGESTIONS = 'STORE_SUGGESTIONS'
 export const STORE_INFO = 'STORE_INFO'
 
 
-
 export const requestPosts = () => {
   return {
     type: REQUEST_POSTS
   }
 }
-
-
 
 export const receivePosts = (posts) => {
   return {

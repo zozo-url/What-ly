@@ -17,7 +17,6 @@ class Image extends Component {
         {this.props.suggestions.map(suggestion => (
           <Suggestion key={suggestion.name} suggestion={suggestion} />
         ))}
-        />
       </div>
     );
   }
