@@ -17,7 +17,7 @@ class Suggestion extends Component {
       <div>
         {/* return */}
         <h1 style={this.state.suggestionStyle}>{this.props.suggestion.name}</h1>
-        <p style={this.state.suggestionStyle}>{this.props.suggestion.info}</p>
+        <p className="wiki-snippet"style={this.state.suggestionStyle}>{this.props.suggestion.info}</p>
       </div>
     );
   }
