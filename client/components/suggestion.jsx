@@ -15,9 +15,8 @@ class Suggestion extends Component {
   render() {
     return (
       <div>
-        {/* return */}
         <h1 style={this.state.suggestionStyle}>{this.props.suggestion.name}</h1>
-        <p className="wiki-snippet"style={this.state.suggestionStyle}>{this.props.suggestion.info}</p>
+        <div className="done" style={this.state.suggestionStyle} dangerouslySetInnerHTML={{ __html: this.props.suggestion.info }}></div>
       </div>
     );
   }
