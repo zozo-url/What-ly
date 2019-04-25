@@ -7,6 +7,11 @@
   font-family: Righteous;
   font-weight: normal;
 }
+.logoquestion {
+  font-family: Righteous;
+  font-weight: normal;
+  margin: -16px 0px 0px 0px;
+}
 
 .wait-indicator {
   display:block;
