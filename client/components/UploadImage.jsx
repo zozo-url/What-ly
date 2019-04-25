@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { fetchPosts, uploadImage } from "../actions";
 
-class LoadSubreddit extends React.Component {
+class UploadImage extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -24,4 +24,4 @@ class LoadSubreddit extends React.Component {
   }
 }
 
-export default connect()(LoadSubreddit);
+export default connect()(UploadImage);

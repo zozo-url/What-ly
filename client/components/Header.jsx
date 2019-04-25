@@ -2,9 +2,11 @@ import React from 'react'
 
 const Header = () => {
     return (
-      <h1 className='logofont'>
-        WHAT&iquest;LY
-      </h1>
+      <div align='center'>
+        <span className='logofont'>WHAT</span>
+        <span className='logoquestion'>&iquest;</span>
+        <span className='logofont'>LY</span>
+      </div>
     )
   }
 
