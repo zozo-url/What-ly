@@ -10,6 +10,11 @@ p {
 h1 {
   font-family: Montserrat, sans-serif;
 }
+.logotag {
+  font-family: Righteous, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+}
 .logofont {
   font-size: 48px;
   font-family: Righteous;
