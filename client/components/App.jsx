@@ -1,17 +1,17 @@
 import React from 'react'
 
 import ErrorMessage from './ErrorMessage'
-import LoadSubreddit from './LoadSubreddit'
-import SubredditList from './SubredditList'
-import WaitIndicator from './WaitIndicator'
+import Header from './Header'
 
 const App = () => (
   <div className='app'>
+    <Header />
     <ErrorMessage />
-    <LoadSubreddit>
+    <h2>Upload placeholder goes here.</h2>
+    {/* <LoadSubreddit>
       <WaitIndicator />
     </LoadSubreddit>
-    <SubredditList />
+    <SubredditList /> */}
   </div>
 )
 

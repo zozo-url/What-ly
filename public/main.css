@@ -3,6 +3,11 @@
   font-weight: bold;
 }
 
+.logofont {
+  font-family: Righteous;
+  font-weight: normal;
+}
+
 .wait-indicator {
   position: absolute;
   margin-left: 5px;
