@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
-import { fetchPosts, uploadImage } from "../actions";
+import { uploadImage } from "../actions";
 
-class LoadSubreddit extends React.Component {
+class UploadImage extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -18,10 +18,9 @@ class LoadSubreddit extends React.Component {
           id="file-upload"
           onChange={this.uploadImage}
         />
-        
       </div>
     );
   }
 }
 
-export default connect()(LoadSubreddit);
+export default connect()(UploadImage);
