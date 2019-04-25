@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { fetchPosts, uploadImage } from "../actions";
+import { uploadImage } from "../actions";
 
 class UploadImage extends React.Component {
   constructor(props) {
@@ -18,7 +18,6 @@ class UploadImage extends React.Component {
           id="file-upload"
           onChange={this.uploadImage}
         />
-        
       </div>
     );
   }

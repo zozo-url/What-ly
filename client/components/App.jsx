@@ -2,7 +2,6 @@ import React from "react";
 
 import ErrorMessage from "./ErrorMessage";
 import UploadImage from "./UploadImage";
-import SubredditList from "./SubredditList";
 import WaitIndicator from "./WaitIndicator";
 import { connect } from "react-redux";
 import Image from "./Image";
@@ -16,7 +15,6 @@ const App = (props) => (
     {props.uploadPage && <UploadImage />}
     {props.imagePage && <Image />}
     <WaitIndicator />
-
   </div>
 );
 
