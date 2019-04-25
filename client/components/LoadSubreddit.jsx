@@ -1,14 +1,27 @@
-import React from 'react'
-import {connect} from 'react-redux'
-import {fetchPosts} from '../actions'
+import React from "react";
+import { connect } from "react-redux";
+import { fetchPosts, uploadImage } from "../actions";
 
-const LoadSubreddit = ({children, dispatch}) => (
-  <div>
-    <button onClick={() => dispatch(fetchPosts('newzealand'))}>
-      Fetch Posts
-    </button>
-    {children}
-  </div>
-)
+class LoadSubreddit extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-export default connect()(LoadSubreddit)
+  uploadImage = e => this.props.dispatch(uploadImage(e));
+
+  render() {
+    return (
+      <div className="upload-input">
+        <input
+          class="btn btn-primary"
+          type="file"
+          id="file-upload"
+          onChange={this.uploadImage}
+        />
+        
+      </div>
+    );
+  }
+}
+
+export default connect()(LoadSubreddit);
