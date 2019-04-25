@@ -1,18 +1,28 @@
-import React from 'react'
+import React from "react";
 
-import ErrorMessage from './ErrorMessage'
-import Header from './Header'
+import ErrorMessage from "./ErrorMessage";
+import LoadSubreddit from "./LoadSubreddit";
+import SubredditList from "./SubredditList";
+import WaitIndicator from "./WaitIndicator";
+import { connect } from "react-redux";
+import Image from "./Image";
 
-const App = () => (
-  <div className='app'>
-    <Header />
+const App = (props) => (
+  <div className="app">
     <ErrorMessage />
-    <h2>Upload placeholder goes here.</h2>
-    {/* <LoadSubreddit>
-      <WaitIndicator />
-    </LoadSubreddit>
-    <SubredditList /> */}
-  </div>
-)
+    
+    {props.uploadPage && <LoadSubreddit />}
+    {props.imagePage && <Image />}
+    <WaitIndicator />
 
-export default App
+  </div>
+);
+
+const mapStateToProps = state => {
+  return {
+    uploadPage: state.uploadPage,
+    imagePage:state.imagePage
+  };
+};
+
+export default connect(mapStateToProps)(App);
