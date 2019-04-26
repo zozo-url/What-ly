@@ -14,20 +14,26 @@ h1 {
   font-family: Righteous, sans-serif;
   font-size: 12px;
   font-weight: normal;
+  left: 20px;
+  top: -14px;
+  position: relative;
+  vertical-align: bottom;
 }
 .logofont {
   font-size: 48px;
   font-family: Righteous;
   font-weight: normal;
+  left: 16px;
   position: relative;
-  top: 16px;
+  top: 0px;
 }
 .logoquestion {
   color: rgb(243, 178, 0);
   font-size: 48px;
   font-family: Righteous;
   font-weight: normal;
-  bottom: -9px;
+  left: 16px;
+  bottom: 6px;
   position: relative;
 }
 
@@ -56,3 +62,6 @@ h1 {
   width:300px;
 }
 
+.done {
+  max-width: 512px;
+}
