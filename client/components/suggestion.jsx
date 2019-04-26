@@ -16,7 +16,7 @@ class Suggestion extends Component {
     };
     
   }
-  changeView = (e) => this.props.dispatch(changeView())
+  changeView = (e) => this.props.dispatch(changeView(this.props.suggestion))
   render() {
     return (
       <div>

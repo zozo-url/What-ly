@@ -11,9 +11,10 @@ export const STORE_SUGGESTIONS = 'STORE_SUGGESTIONS'
 export const STORE_INFO = 'STORE_INFO'
 export const CHANGE_VIEW = 'CHANGE_VIEW'
 
-export const changeView = () => {
+export const changeView = (suggestion) => {
   return {
-    type: CHANGE_VIEW
+    type: CHANGE_VIEW,
+    suggestion
   }
 }
 

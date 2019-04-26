@@ -8,6 +8,8 @@ import uploadPage from './upload-page'
 import imagePage from './image-page'
 import suggestions from './suggestions'
 import changeView from './change-view'
+import wikiSuggestion from './wiki-suggestion'
+wikiSuggestion
 export default combineReducers({
   errorMessage,
   subreddits,
@@ -16,6 +18,7 @@ export default combineReducers({
   uploadPage,
   imagePage,
   suggestions,
-  changeView
+  changeView,
+  wikiSuggestion
 
 })

@@ -6,6 +6,7 @@ import WaitIndicator from "./WaitIndicator";
 import { connect } from "react-redux";
 import Image from "./Image";
 import Header from "./Header"
+import Wikipedia from "./Wikipedia";
 
 const App = (props) => (
   <div className="app">
@@ -14,7 +15,7 @@ const App = (props) => (
     
     {props.uploadPage && <UploadImage />}
     {props.imagePage && !props.changeView && <Image />}
-    {props.changeView && <Thing/>}
+    {props.changeView && <Wikipedia/>}
     <WaitIndicator />
   </div>
 );
