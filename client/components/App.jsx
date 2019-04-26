@@ -11,9 +11,9 @@ const App = (props) => (
   <div className="app">
     <Header />
     <ErrorMessage />
-    
+
     {props.uploadPage && <UploadImage />}
-    {props.imagePage && <Image />}
+    {!props.waiting && <Image />}
     <WaitIndicator />
   </div>
 );
@@ -21,7 +21,8 @@ const App = (props) => (
 const mapStateToProps = state => {
   return {
     uploadPage: state.uploadPage,
-    imagePage:state.imagePage
+    imagePage: state.imagePage,
+    waiting: state.waiting
   };
 };
 

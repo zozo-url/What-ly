@@ -1,15 +1,16 @@
 import {
   SHOW_ERROR,
   REQUEST_POSTS,
-  STORE_IMAGE,
-  UPLOAD_IMAGE} from '../actions'
+  STORE_INFO,
+  UPLOAD_IMAGE
+} from '../actions'
 
 const waiting = (state = false, action) => {
   switch (action.type) {
-    case  UPLOAD_IMAGE:
+    case UPLOAD_IMAGE:
       return true
 
-    case STORE_IMAGE:
+    case STORE_INFO:
       return false
 
     case SHOW_ERROR:
