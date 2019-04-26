@@ -12,7 +12,7 @@ const App = (props) => (
   <div className="app">
     <Header />
     <ErrorMessage />
-    
+
     {props.uploadPage && <UploadImage />}
     {props.imagePage && !props.changeView && <Image />}
     {props.changeView && <Wikipedia/>}
