@@ -105,5 +105,9 @@ h1 {
   margin: auto;
   display: block;
   margin-top: 64px;
-  width: 300px;
+  width:300px;
+}
+
+.done {
+  max-width: 512px;
 }
