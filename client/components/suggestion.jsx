@@ -8,8 +8,8 @@ class Suggestion extends Component {
     this.state = {
       suggestionStyle: {
         position: "absolute",
-        top: `${Math.floor(Math.random() * 800)}px`,
-        left: `${Math.floor(Math.random() * 1000)}px`,
+        top: `${Math.floor(Math.random() * 1000)}px`,
+        left: `${Math.floor(Math.random() * 1500)}px`,
         color: "orange",
         fontSize: `${700 / (parseInt(props.index) + 9)}px`
       }

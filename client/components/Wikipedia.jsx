@@ -16,7 +16,7 @@ class Wikipedia extends Component {
   render() {
     console.log('state: ', this.props.wikiSuggestion);
     return (
-      <div>
+      <div className="wiki-container">
         <h2>{this.props.wikiSuggestion.name}</h2>
         <div className="done" style={this.state.suggestionStyle} 
         dangerouslySetInnerHTML={{ __html: this.props.wikiSuggestion.info}}>
