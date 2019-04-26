@@ -53,12 +53,15 @@ export function fetchInfo(suggestion, dispatch) {
   request.get(`${proxy}https://en.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro=&titles=${suggestion.name}`)
     .then(res => {
       let pageid = 0;
-      
-      for (let key in res.body.query.pages){
+
+      for (let key in res.body.query.pages) {
         pageid = key
       }
-  
-      dispatch(storeInfo({name:suggestion.name,info:res.body.query.pages[pageid].extract}))
+
+      dispatch(storeInfo({
+        name: suggestion.name,
+        info: res.body.query.pages[pageid].extract
+      }))
     })
     .catch(err => {
       console.log(err);
@@ -67,10 +70,12 @@ export function fetchInfo(suggestion, dispatch) {
 }
 
 export function fetchSuggestions(imgURL, dispatch) {
-  const app = new Clarifai.App({ apiKey: '247d48331ee24177aa349ec95f734ceb' });
+  const app = new Clarifai.App({
+    apiKey: '247d48331ee24177aa349ec95f734ceb'
+  });
   app.models.predict(Clarifai.GENERAL_MODEL, imgURL)
     .then(response => {
-      response.rawData.outputs[0].data.concepts.map(suggestion => fetchInfo(suggestion,dispatch))
+      response.rawData.outputs[0].data.concepts.map(suggestion => fetchInfo(suggestion, dispatch))
       //dispatch(storeSuggestions(response.rawData.outputs[0].data.concepts))
     })
     .catch(err => {
@@ -79,11 +84,11 @@ export function fetchSuggestions(imgURL, dispatch) {
     });
 }
 
-export function uploadImage(e) {
+export function uploadImage(img) {
   return (dispatch) => {
     const CLOUDINARY_URL = 'https://api.cloudinary.com/v1_1/what-ly/upload'
     const CLOUDINARY_UPLOAD_PRESET = 'Whatly'
-    let file = e.target.files[0];
+    let file = img;
     let formData = new FormData();
     formData.append('file', file);
     formData.append('upload_preset', CLOUDINARY_UPLOAD_PRESET);
