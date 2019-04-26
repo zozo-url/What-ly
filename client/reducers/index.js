@@ -7,6 +7,7 @@ import images from './images'
 import uploadPage from './upload-page'
 import imagePage from './image-page'
 import suggestions from './suggestions'
+import changeView from './change-view'
 export default combineReducers({
   errorMessage,
   subreddits,
@@ -14,6 +15,7 @@ export default combineReducers({
   images,
   uploadPage,
   imagePage,
-  suggestions
+  suggestions,
+  changeView
 
 })

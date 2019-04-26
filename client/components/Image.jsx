@@ -14,8 +14,8 @@ class Image extends Component {
           class="main-image"
           src={this.props.images[this.props.images.length - 1]}
         />
-        {this.props.suggestions.map(suggestion => (
-          <Suggestion key={suggestion.name} suggestion={suggestion} />
+        {this.props.suggestions.map((suggestion, index) => (
+          <Suggestion key={suggestion.name} index={index} suggestion={suggestion} />
         ))}
       </div>
     );
