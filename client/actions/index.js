@@ -9,18 +9,11 @@ export const STORE_IMAGE = 'STORE_IMAGE'
 export const UPLOAD_IMAGE = 'UPLOAD_IMAGE'
 export const STORE_SUGGESTIONS = 'STORE_SUGGESTIONS'
 export const STORE_INFO = 'STORE_INFO'
+export const CHANGE_VIEW = 'CHANGE_VIEW'
 
-
-export const requestPosts = () => {
+export const changeView = () => {
   return {
-    type: REQUEST_POSTS
-  }
-}
-
-export const receivePosts = (posts) => {
-  return {
-    type: RECEIVE_POSTS,
-    posts: posts.map(post => post.data)
+    type: CHANGE_VIEW
   }
 }
 

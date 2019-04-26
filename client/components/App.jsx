@@ -13,7 +13,8 @@ const App = (props) => (
     <ErrorMessage />
     
     {props.uploadPage && <UploadImage />}
-    {props.imagePage && <Image />}
+    {props.imagePage && !props.changeView && <Image />}
+    {props.changeView && <Thing/>}
     <WaitIndicator />
   </div>
 );
@@ -21,7 +22,8 @@ const App = (props) => (
 const mapStateToProps = state => {
   return {
     uploadPage: state.uploadPage,
-    imagePage:state.imagePage
+    imagePage:state.imagePage,
+    changeView:state.changeView
   };
 };
 
