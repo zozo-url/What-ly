@@ -2,10 +2,10 @@ import React from 'react'
 
 const Header = () => {
     return (
-      <div align='center'>
+      <div align='left'>
         <span className='logofont'>WHAT</span>
         <span className='logoquestion'>&iquest;</span>
-        <span className='logofont'>LY</span><br />
+        <span className='logofont'>LY</span>
         <span className='logotag'>A picture is worth a thousand words</span>
       </div>
     )

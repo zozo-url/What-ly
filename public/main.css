@@ -11,12 +11,23 @@ h1 {
   font-family: Montserrat, sans-serif;
 }
 
+.logotag {
+  font-family: Righteous, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  left: 20px;
+  top: -14px;
+  position: relative;
+  vertical-align: bottom;
+}
+
 .logofont {
   font-size: 48px;
   font-family: Righteous;
   font-weight: normal;
+  left: 16px;
   position: relative;
-  top: 16px;
+  top: 0px;
 }
 
 .logoquestion {
@@ -24,7 +35,8 @@ h1 {
   font-size: 48px;
   font-family: Righteous;
   font-weight: normal;
-  bottom: -9px;
+  left: 16px;
+  bottom: 6px;
   position: relative;
 }
 
@@ -34,7 +46,7 @@ h1 {
   margin: auto;
   margin-top: 64px;
   width: 300px;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%)
 }
